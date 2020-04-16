@@ -53,3 +53,23 @@ a {
     text-decoration: none;
     color: #0E1116;
 }
+
+body {
+    counter-reset: v;
+}
+.counter {
+    clear: both;
+}
+
+.counter-list {
+    counter-increment: v;
+    list-style: none;
+}
+.counter-list::before {
+content: counter(v, upper-roman);
+display: inline-block;
+width: 20px;
+height: 20px;
+background-color: violet;
+text-align: center;
+}
