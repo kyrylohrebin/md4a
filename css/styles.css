@@ -1,5 +1,5 @@
 .wrapper {
-    width: 800px;
+    width: 900px;
     margin: 0 auto;
     float: right;
     padding: 0;
@@ -37,6 +37,10 @@
 
 .list-item:nth-child(3n+3) {
     background-color: #0D5D56;
+}
+
+.list-item::before {
+    content: "\2192";
 }
 
 .clearfix::after {
