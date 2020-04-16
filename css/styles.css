@@ -1,0 +1,35 @@
+.wrapper {
+    width: 500px;
+    background-color: aqua;
+    margin: 0 auto;
+    float: right;
+    padding: 0;
+}
+
+.navigation {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.list-item {
+    float: left;
+    list-style: none;
+}
+
+.list-item a:hover {
+    color: crimson;
+}
+
+.list-item a:focus {
+    color: magenta;
+}
+
+.list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
