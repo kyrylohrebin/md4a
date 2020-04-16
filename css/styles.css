@@ -1,6 +1,5 @@
 .wrapper {
-    width: 500px;
-    background-color: aqua;
+    width: 800px;
     margin: 0 auto;
     float: right;
     padding: 0;
@@ -17,7 +16,7 @@
 }
 
 .list-item a:hover {
-    color: crimson;
+    color: white;
 }
 
 .list-item a:focus {
@@ -28,8 +27,25 @@
     margin-right: 50px;
 }
 
+.list-item:nth-child(3n+1) {
+    background-color: #88292F;
+}
+
+.list-item:nth-child(3n+2) {
+    background-color: #5DB7DE;
+}
+
+.list-item:nth-child(3n+3) {
+    background-color: #0D5D56;
+}
+
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: #0E1116;
 }
